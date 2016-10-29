@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+source /usr/local/bin/virtualenvwrapper.sh
+
+entrypoint="src/core.py"
+
+if [[ $VIRTUAL_ENV ]]; then
+  python $entrypoint
+else
+  if lsvirtualenv | grep hy ; then
+    workon lisp
+    python $entrypoint
+  else
+    mkvirtualenv lisp --python=$(which python3)
+    python $entrypoint
+  fi
+fi
+

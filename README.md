@@ -1,0 +1,9 @@
+# eval / apply
+
+<img src="doc/cover2.png" alt="eval / apply" style="width: 500px
+
+
+## What
+
+Lisp interpreter in Python
+
