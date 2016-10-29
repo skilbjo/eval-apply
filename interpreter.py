@@ -50,6 +50,7 @@ def atom(token):
 
 def standard_env():
   "An environment with some Scheme standard procedures."
+  "https://docs.python.org/3/library/operator.html"
   env = Env()
   env.update(vars(math)) # sin, cos, sqrt, pi, ...
   env.update({

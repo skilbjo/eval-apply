@@ -1,6 +1,6 @@
 # eval / apply
 
-<img src="doc/cover2.jpg" alt="eval / apply" style="width: 500px
+![eval / apply](doc/cover2.jpg?raw=true "Eval / apply")
 
 
 ## What
