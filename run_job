@@ -2,17 +2,18 @@
 
 source /usr/local/bin/virtualenvwrapper.sh
 
-entrypoint="src/core.py"
+interpreter="interpreter.py"
+lisp="src/core.lisp"
 
 if [[ $VIRTUAL_ENV ]]; then
-  python $entrypoint
+  python $interpreter $lisp
 else
-  if lsvirtualenv | grep hy ; then
+  if lsvirtualenv | grep lisp; then
     workon lisp
-    python $entrypoint
+    python $interpreter -f $lisp
   else
     mkvirtualenv lisp --python=$(which python3)
-    python $entrypoint
+    python $interpreter -f $lisp
   fi
 fi
 
