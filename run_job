@@ -2,8 +2,10 @@
 
 source /usr/local/bin/virtualenvwrapper.sh
 
-interpreter="interpreter.py"
-lisp="src/core.lisp"
+lib_dir="./lib"
+src_dir="./src"
+interpreter="$lib_dir/interpreter.py"
+lisp="$src_dir/core.lisp"
 
 if [[ $VIRTUAL_ENV ]]; then
   python $interpreter $lisp
