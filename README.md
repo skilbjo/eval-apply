@@ -1,6 +1,6 @@
 # eval / apply
 <!--![eval / apply](doc/cover2.jpg?raw=true "Eval / apply")-->
-<img src="doc/cover2.jpg" alt="hi" style="width: 50px;" />
+<img src="doc/cover2.jpg" alt="hi" style="width: 5px;"/>
 
 ## What
 Lisp interpreter in Python
